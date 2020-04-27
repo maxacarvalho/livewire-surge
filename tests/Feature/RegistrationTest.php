@@ -15,7 +15,9 @@ class RegistrationTest extends TestCase
     /** @test */
     function registration_page_contains_livewire_component()
     {
-        $this->get('/register')->assertSeeLivewire('auth.register');
+        $this->get(route('auth.register'))
+            ->assertSuccessful()
+            ->assertSeeLivewire('auth.register');
     }
 
     /** @test */
