@@ -32,7 +32,7 @@
     <div class="mt-6">
         <p class="mt-2 text-center text-sm leading-5 text-gray-600 max-w">
             <a href="/register" class="font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:underline transition ease-in-out duration-150">
-                Haven't signed up yet??
+                Haven't signed up yet?
             </a>
         </p>
     </div>
