@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="264px" height="51px" viewBox="0 0 264 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-61.000000, -164.000000)" fill="#fff">
+            <g transform="translate(61.000000, 114.000000)">
+                <text id="surge" font-family="'Baloo Paaji 2'" font-size="74" font-weight="normal" letter-spacing="10.1038462">
+                    <tspan x="47" y="86">surge</tspan>
+                </text>
+                <path fill="#8CA6F6" d="M5,58 L35,58 L35,59 C35,61.7614237 32.7614237,64 30,64 L0,64 L0,63 C-3.38176876e-16,60.2385763 2.23857625,58 5,58 Z" id="Rectangle"></path>
+                <path fill="#8CA6F6" d="M18,74 L35,74 L35,75 C35,77.7614237 32.7614237,80 30,80 L13,80 L13,79 C13,76.2385763 15.2385763,74 18,74 Z" id="Rectangle-Copy"></path>
+            </g>
+        </g>
+    </g>
+</svg>
