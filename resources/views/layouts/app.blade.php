@@ -21,7 +21,7 @@
                         <img class="h-8 w-auto" src="/img/logos/workflow-logo-on-brand.svg" alt="Workflow">
                     </div>
                     <nav class="mt-5 px-2 space-y-1">
-                        <a href="#" class="group flex items-center px-2 py-2 text-base leading-6 font-medium rounded-md text-white bg-indigo-900 focus:outline-none focus:bg-indigo-700 transition ease-in-out duration-150">
+                        <a href="/dashboard" class="group flex items-center px-2 py-2 text-base leading-6 font-medium rounded-md text-white bg-indigo-900 focus:outline-none focus:bg-indigo-700 transition ease-in-out duration-150">
                             <svg class="mr-4 h-6 w-6 text-indigo-400 group-hover:text-indigo-300 group-focus:text-indigo-300 transition ease-in-out duration-150" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10M9 21h6"></path>
                             </svg>
@@ -30,7 +30,7 @@
                     </nav>
                 </div>
                 <div class="flex-shrink-0 flex border-t border-indigo-700 p-4">
-                    <a href="#" class="flex-shrink-0 group block focus:outline-none">
+                    <a href="/profile" class="flex-shrink-0 group block focus:outline-none">
                         <div class="flex items-center">
                             <div>
                                 <img class="inline-block h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80" alt="">
@@ -62,7 +62,7 @@
                 </div>
                 <!-- Sidebar component, swap this element with another sidebar if you like -->
                 <nav class="mt-5 space-y-1 flex-1 px-2 bg-indigo-800">
-                    <a href="#" class="group flex items-center px-2 py-2 text-sm leading-5 font-medium text-white rounded-md bg-indigo-900 focus:outline-none focus:bg-indigo-700 transition ease-in-out duration-150">
+                    <a href="/dashboard" class="group flex items-center px-2 py-2 text-sm leading-5 font-medium text-white rounded-md bg-indigo-900 focus:outline-none focus:bg-indigo-700 transition ease-in-out duration-150">
                         <svg class="mr-3 h-6 w-6 text-indigo-400 group-focus:text-indigo-300 transition ease-in-out duration-150" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10M9 21h6"></path>
                         </svg>
@@ -72,7 +72,7 @@
             </div>
 
             <div class="flex-shrink-0 flex border-t border-indigo-700 p-4">
-                <a href="#" class="flex-shrink-0 w-full group block">
+                <a href="/profile" class="flex-shrink-0 w-full group block">
                     <div class="flex items-center">
                         <div>
                             <img class="inline-block h-9 w-9 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80" alt="">
@@ -103,13 +103,7 @@
         </div>
 
         <main class="flex-1 relative z-0 overflow-y-auto pt-2 pb-6 focus:outline-none md:py-6" tabindex="0" x-data="" x-init="$el.focus()">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-                <h1 class="text-2xl font-semibold text-gray-900">Dashboard</h1>
-            </div>
-
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-                @yield('content')
-            </div>
+            @yield('content')
         </main>
     </div>
 </div>
