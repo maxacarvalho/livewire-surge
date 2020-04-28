@@ -37,7 +37,7 @@
                             </div>
                             <div class="ml-3">
                                 <p class="text-base leading-6 font-medium text-white">
-                                    Tom Cook
+                                    Paul Weamer
                                 </p>
                                 <p class="text-sm leading-5 font-medium text-indigo-300 group-hover:text-indigo-100 group-focus:underline transition ease-in-out duration-150">
                                     View profile
@@ -80,7 +80,7 @@
 
                         <div class="ml-3">
                             <p class="text-sm leading-5 font-medium text-white">
-                                Tom Cook
+                                Paul Weamer
                             </p>
 
                             <p class="text-xs leading-4 font-medium text-indigo-300 group-hover:text-indigo-100 transition ease-in-out duration-150">
