@@ -24,7 +24,7 @@ class Profile extends Component
 
         auth()->user()->update($profileData);
 
-        $this->dispatchBrowserEvent('notify', 'Profile saved!');
+        $this->emitSelf('notify-saved');
     }
 
     public function render()
