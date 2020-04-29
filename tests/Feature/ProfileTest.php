@@ -63,9 +63,8 @@ class ProfileTest extends TestCase
 
         Livewire::actingAs($user)
             ->test('profile')
-            ->assertDontSee('Profile saved!')
             ->call('save')
-            ->assertSee('Profile saved!');
+            ->assertDispatchedBrowserEvent('notify');
     }
 
     /** @test */
