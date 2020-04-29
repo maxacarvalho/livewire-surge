@@ -6,8 +6,22 @@ use Livewire\Component;
 
 class Profile extends Component
 {
+    public $saved = false;
     public $username = '';
     public $about = '';
+
+    public function mount()
+    {
+        $this->username = auth()->user()->username;
+        $this->about = auth()->user()->about;
+    }
+
+    public function updated($field)
+    {
+        if ($field !== 'saved') {
+            $this->saved = false;
+        }
+    }
 
     public function save()
     {
@@ -17,6 +31,8 @@ class Profile extends Component
         ]);
 
         auth()->user()->update($profileData);
+
+        $this->saved = true;
     }
 
     public function render()

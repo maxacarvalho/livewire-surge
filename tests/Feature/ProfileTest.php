@@ -6,7 +6,6 @@ use App\User;
 use Tests\TestCase;
 use Livewire\Livewire;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Str;
 
 class ProfileTest extends TestCase
 {
@@ -38,6 +37,35 @@ class ProfileTest extends TestCase
 
         $this->assertEquals('foo', $user->username);
         $this->assertEquals('bar', $user->about);
+    }
+
+    /** @test */
+    function profile_info_is_pre_populated()
+    {
+        $user = factory(User::class)->create([
+            'username' => 'foo',
+            'about' => 'bar',
+        ]);
+
+        Livewire::actingAs($user)
+            ->test('profile')
+            ->assertSet('username', 'foo')
+            ->assertSet('about', 'bar');
+    }
+
+    /** @test */
+    function message_is_shown_on_save()
+    {
+        $user = factory(User::class)->create([
+            'username' => 'foo',
+            'about' => 'bar',
+        ]);
+
+        Livewire::actingAs($user)
+            ->test('profile')
+            ->assertDontSee('Profile saved!')
+            ->call('save')
+            ->assertSee('Profile saved!');
     }
 
     /** @test */
