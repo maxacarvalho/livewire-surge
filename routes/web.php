@@ -1,12 +1,13 @@
 <?php
 
+Route::redirect('/', 'dashboard');
+
 /**
  * App Routes
  */
 Route::middleware('auth')->group(function () {
-    Route::redirect('/', 'dashboard');
-
     Route::livewire('/dashboard', 'dashboard');
+    Route::livewire('/profile', 'profile');
 });
 
 /**
