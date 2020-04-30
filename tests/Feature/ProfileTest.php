@@ -68,7 +68,7 @@ class ProfileTest extends TestCase
     }
 
     /** @test */
-    function username_must_less_than_24_characters()
+    function username_must_be_less_than_24_characters()
     {
         $user = factory(User::class)->create();
 
@@ -81,7 +81,7 @@ class ProfileTest extends TestCase
     }
 
     /** @test */
-    function about_must_less_than_140_characters()
+    function about_must_be_less_than_140_characters()
     {
         $user = factory(User::class)->create();
 
